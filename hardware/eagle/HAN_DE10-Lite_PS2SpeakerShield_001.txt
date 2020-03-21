@@ -1,0 +1,23 @@
+Partlist exported from HAN_DE10-Lite_Board_001.sch at 26-2-2020 19:42
+
+Part Value                      Device                     Package            Description                                                                            POPULARITY PROD_ID    SF_SKU    SPICEPREFIX
+B1   ARDUINO_UNO_R3_SHIELD_ICSP ARDUINO_UNO_R3_SHIELD_ICSP UNO_R3_SHIELD_ICSP Arduino R3 Shield Footprint with ICSP Header                                                                                      
+C1   100n                       C-EUC1206                  C1206              CAPACITOR, European symbol                                                             54                              C          
+C2   100n                       C-EUC1206                  C1206              CAPACITOR, European symbol                                                             54                              C          
+C3   100n                       C-EUC1206                  C1206              CAPACITOR, European symbol                                                             54                              C          
+C4   100n                       C-EUC1206                  C1206              CAPACITOR, European symbol                                                             54                              C          
+D1   BAT54S                     BAT54S                     SOT23              Schottky barrier (double) diodesPlanar Schottky barrier diodes encapsulated in a SOT23                                            
+D2   BAT54S                     BAT54S                     SOT23              Schottky barrier (double) diodesPlanar Schottky barrier diodes encapsulated in a SOT23                                            
+D3   BAT54S                     BAT54S                     SOT23              Schottky barrier (double) diodesPlanar Schottky barrier diodes encapsulated in a SOT23                                            
+D4   BAT54S                     BAT54S                     SOT23              Schottky barrier (double) diodesPlanar Schottky barrier diodes encapsulated in a SOT23                                            
+LS1  SPEAKER                    SPEAKER                    PCB_MOUNT_SPEAKER  Speaker                                                                                           COMP-11789 COM-11089            
+R1   2K                         R-EU_M1206                 M1206              RESISTOR, European symbol                                                              17                              R          
+R2   2K                         R-EU_M1206                 M1206              RESISTOR, European symbol                                                              17                              R          
+R3   2K                         R-EU_M1206                 M1206              RESISTOR, European symbol                                                              17                              R          
+R4   2K                         R-EU_M1206                 M1206              RESISTOR, European symbol                                                              17                              R          
+R5   120                        R-EU_M1206                 M1206              RESISTOR, European symbol                                                              17                              R          
+R6   120                        R-EU_M1206                 M1206              RESISTOR, European symbol                                                              17                              R          
+R7   120                        R-EU_M1206                 M1206              RESISTOR, European symbol                                                              17                              R          
+R8   120                        R-EU_M1206                 M1206              RESISTOR, European symbol                                                              17                              R          
+R9   120                        R-EU_M1206                 M1206              RESISTOR, European symbol                                                              17                              R          
+X1                              MINI_DIN_6                 M_DIN6                                                                                                                                               
