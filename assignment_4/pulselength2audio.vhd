@@ -11,9 +11,7 @@
 --!
 --! Nr:    |Date:      |Author: |Remarks:
 --! -------|-----------|--------|-----------------------------------
---! 001    |28-3-2015  |WLGRW   |Inital version
---! 002    |5-3-2020   |WLGRW   |Update to MAX10 on DE10-Lite board
---! 003    |21-3-2020  |WLGRW   |Removed ARCHITECTURE and added documentation
+--! 001    |21-3-2020  |WLGRW   |Removed ARCHITECTURE and added documentation
 --!        |           |        |Added to Git repository.
 --!
 --! # Assignment 4
