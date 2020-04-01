@@ -18,9 +18,6 @@
 --!
 --! ## Architecture 1
 --!
---!
---! ## Architecture 2
---!
 --! These constants are used to make the VHDL code more readable.
 --! Beacuse we will create both numbers and alphanumeric characters in the 
 --! display the caharacters are defined as CONSTANTS in the GENERIC part of the
@@ -72,7 +69,7 @@ END ENTITY seg7dec;
 ARCHITECTURE implementation OF seg7dec IS
 BEGIN
 
-	--! Add here the ARCHITECTURE of your refactored 7-segment driver
+   --! Add here the ARCHITECTURE of your refactored 7-segment driver
 
 END ARCHITECTURE implementation;
 --------------------------------------------------------------------
