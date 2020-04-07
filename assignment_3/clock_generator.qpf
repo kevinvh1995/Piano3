@@ -19,13 +19,13 @@
 #
 # Quartus Prime
 # Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-# Date created = 12:45:36  March 05, 2020
+# Date created = 12:10:02  March 05, 2020
 #
 # -------------------------------------------------------------------------- #
 
 QUARTUS_VERSION = "19.1"
-DATE = "12:45:36  March 05, 2020"
+DATE = "12:10:02  March 05, 2020"
 
 # Revisions
 
-PROJECT_REVISION = "pulselength2audio"
+PROJECT_REVISION = "clock_generator"
