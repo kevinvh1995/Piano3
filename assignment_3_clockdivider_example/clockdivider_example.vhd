@@ -16,7 +16,7 @@
 --!
 --! This clock_generator wil devide the clock 1, 1/2, 1/4, 1/8, 1/16, 1/32 and 1/64 times
 --!
---! - he signal divider_output receives the integer
+--! - The signal divider_output receives the integer
 --! - Per signal on the vector a devided signal of the clock is avaialable
 --! - lsb is devide by 1, msb is devide by 2 power N--! 
 --------------------------------------------------------------------
