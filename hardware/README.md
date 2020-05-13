@@ -6,16 +6,14 @@ Project templates and materials for the VHDL Piano assignment.
 
 # PCB design
 
-# 
+# Component overview
 
 ![Component layout](images/PS2SpeakerShield_BoardTopView.png?raw=true "Title")
 
 
 # BOM
 
-'''
-Partlist exported from HAN_DE10-Lite_Board_001.sch at 26-2-2020 19:42
-
+```
 Part Value   Package            Description
 C1   100n    C1206              CAPACITOR
 C2   100n    C1206              CAPACITOR
@@ -36,8 +34,8 @@ R8   120     M1206              RESISTOR
 R9   120     M1206              RESISTOR
 X1   DIN6FE  M_DIN6             6-PIN MINI-DIN female connector
 LS1  SPEAKER PCB_MOUNT_SPEAKER  Speaker
+```
 
-'''
 
 # Disclaimer
 The Workshop Radio Planning is provided in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
