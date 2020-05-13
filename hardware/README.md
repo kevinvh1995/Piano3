@@ -21,13 +21,24 @@ The shield is designed with reprodction in mind. Component selection was made to
 
 The shield was designed using 
 
+![Shield on board](images/PS2SpeakerShieldOnDE10-Lite_small.png?raw=true "Shield on DE10-Lite board")
+
+[Full size picture of Shield on DE10-Lite board](images/PS2SpeakerShieldOnDE10-Lite_small.png)
+
+
 ## Schematic
+
+![Schematic thumbnail](images/PS2SpeakerShield_small.png?raw=true "Schematic thumbnail")
+
+[Full size schematic](images/PS2SpeakerShield.png)
 
 ## PCB design
 
 ## Component overview
 
-![Component layout](images/PS2SpeakerShield_BoardTopView.png?raw=true "Title")
+![Component layout](images/PS2SpeakerShield_BoardTopView_small.png?raw=true "Component layout")
+
+[Full size component layout](images/PS2SpeakerShield_BoardTopView.png)
 
 
 # BOM
