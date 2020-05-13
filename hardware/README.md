@@ -1,5 +1,7 @@
 # PS/2 keyboard interface shield for DE10-Lite
 
+**This page is currently being updated, please return later for full documentation**
+
 Project templates and materials for the VHDL Piano assignment.
 
 ## Responsible disclosure 
@@ -11,8 +13,8 @@ responsible disclosure, see: https://en.wikipedia.org/wiki/Responsible_disclosur
 The PS/2 keyboard interface shield for DE10-Lite is provided in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
   
 ## License
-The PS/2 keyboard interface shield for DE10-Lite is part of the SOC classes for HAN Engineering Hoofmodule Embedded Hardware Engineering.
-The PS/2 keyboard interface shield for DE10-Lite is free: You may redistribute it and/or modify it under the terms of a Creative  Commons Attribution-NonCommercial 4.0 International License (http://creativecommons.org/licenses/by-nc/4.0/) by Remko Welling (http://han-ese.nl/~rwelling) E-mail: remko.welling@han.nl 
+The PS/2 keyboard interface shield for DE10-Lite is part of the SOC classes for HAN Engineering Hoofdmodule Embedded Hardware Engineering.
+The design of the PS/2 keyboard interface shield for DE10-Lite is free: You may redistribute it and/or modify it under the terms of a Creative  Commons Attribution-NonCommercial 4.0 International License (http://creativecommons.org/licenses/by-nc/4.0/) by Remko Welling (http://han-ese.nl/~rwelling) E-mail: remko.welling@han.nl 
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
 
