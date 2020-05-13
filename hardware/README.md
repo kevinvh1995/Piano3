@@ -1,6 +1,20 @@
-# HAN SOC Assignment VHDL Piano
+# PS/2 keyboard interface shield for DE10-Lite
 
 Project templates and materials for the VHDL Piano assignment.
+
+## Responsible disclosure 
+Students and lecturers are encouraged to send in their experiences, problems, errors, any other observation while using this document or the PS/2 keyboard interface shield for DE10-Lite. Please send your feedback to one of the lecturers, so we can improve this paper. Thank you.
+
+responsible disclosure, see: https://en.wikipedia.org/wiki/Responsible_disclosure 
+
+## Disclaimer
+The PS/2 keyboard interface shield for DE10-Lite is provided in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+  
+## License
+The PS/2 keyboard interface shield for DE10-Lite is part of the SOC classes for HAN Engineering Hoofmodule Embedded Hardware Engineering.
+The PS/2 keyboard interface shield for DE10-Lite is free: You may redistribute it and/or modify it under the terms of a Creative  Commons Attribution-NonCommercial 4.0 International License (http://creativecommons.org/licenses/by-nc/4.0/) by Remko Welling (http://han-ese.nl/~rwelling) E-mail: remko.welling@han.nl 
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
 
 # Schematic
 
@@ -36,13 +50,4 @@ X1   DIN6FE  M_DIN6             6-PIN MINI-DIN female connector
 LS1  SPEAKER PCB_MOUNT_SPEAKER  Speaker
 ```
 
-
-# Disclaimer
-The Workshop Radio Planning is provided in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-  
-# License
-This Workshop paper is part of the Worksop radio planning at the Things network conference.
-This workshop paper is free: You may redistribute it and/or modify it under the terms of a Creative  Commons Attribution-NonCommercial 4.0 International License  (http://creativecommons.org/licenses/by-nc/4.0/) by Remko Welling (http://rfsee.nl) E-mail: remko@rfsee.nl 
-
-<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
 
