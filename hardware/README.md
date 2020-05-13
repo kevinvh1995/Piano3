@@ -16,11 +16,16 @@ The PS/2 keyboard interface shield for DE10-Lite is free: You may redistribute i
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
 
-# Schematic
+## Documentation
+The shield is designed with reprodction in mind. Component selection was made to allow a introduction to working with SMD components an doldering of those. Therefore 1206 sized components are used in the design.
 
-# PCB design
+The shield was designed using 
 
-# Component overview
+## Schematic
+
+## PCB design
+
+## Component overview
 
 ![Component layout](images/PS2SpeakerShield_BoardTopView.png?raw=true "Title")
 
