@@ -1,8 +1,5 @@
 # PS/2 keyboard interface shield for DE10-Lite
-
-**This page is currently being updated, please return later for full documentation**
-
-Project templates and materials for the VHDL Piano assignment.
+All information required to build your own PS/2 keyboard interface shield for DE10-Lite.
 
 ## Responsible disclosure 
 Students and lecturers are encouraged to send in their experiences, problems, errors, any other observation while using this document or the PS/2 keyboard interface shield for DE10-Lite. Please send your feedback to one of the lecturers, so we can improve this paper. Thank you.
