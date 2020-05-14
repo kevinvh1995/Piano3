@@ -2,7 +2,7 @@
 All information required to build your own PS/2 keyboard interface shield for DE10-Lite.
 
 ## Responsible disclosure 
-Students and lecturers are encouraged to send in their experiences, problems, errors, any other observation while using this document or the PS/2 keyboard interface shield for DE10-Lite. Please send your feedback to one of the lecturers, so we can improve this paper. Thank you.
+Students and lecturers are encouraged to send in their experiences, problems, errors, any other observation while using this document or the PS/2 keyboard interface shield for DE10-Lite. Please send your feedback to one of the lecturers, by raising an issue with this repository, so we can improve this paper. Thank you.
 
 More about responsible disclosure, see: https://en.wikipedia.org/wiki/Responsible_disclosure 
 
