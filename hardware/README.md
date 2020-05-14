@@ -56,7 +56,7 @@ For soldering the component layout is made availabale separately. Click on "[Ful
 ![Component layout](images/PS2SpeakerShield_BoardTopView_small.png?raw=true "Component layout")
 
 # Ordering
-For PCB ordering and delivery in europe, Aisler is recommended: https://aisler.net/
+For PCB ordering and delivery in Europe, Aisler is recommended: https://aisler.net/
 
 ## BOM
 The Bill of Materials (BOM) contains easy obtainable components that can be purchased online:
@@ -86,14 +86,24 @@ LS1  SPEAKER PCB_MOUNT_SPEAKER  Speaker
 # Soldering the PS/2 keyboard shield
 Soldering the PS/2 keyboard interface shield kit is fun!
 
-For those who start with soldering, Sparkfun hase a nice how-to availabale: https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering/
+ - For those who start with soldering, Sparkfun hase a nice how-to availabale: https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering/
+ - For soldering SMD components the instructions of David Haillant are recommended: http://www.davidhaillant.com/smd-soldering/
+ 
+## Recommended order
+When soldering the recommended order is to work "from small to big".
 
-For soldering SMD components the instructions of David Haillant are recommended: http://www.davidhaillant.com/smd-soldering/
+ 1. Start with soldering the SMD resisitors
+ 2. Than solder the SMD capacitors
+ 3. Finalize soldering SMD components with the diodes
+ 4. Solder the loadspeaker
+ 5. Solder the PS/2 connector
+ 6. Cut the pin-headers to the reqired length
+ 6. Solder the pin-headers
 
 # Conclusion
-Soldering is fun! I hope you enjoy your self made PS/2 keyboard interface shield and the joy of playing your VHDL piano.
+Soldering is fun! I hope you enjoy your self-made PS/2 keyboard interface shield and the joy of playing your VHDL piano.
 
-You make me very happy when you share your pictures or video.
+You make me very happy when you share your pictures or video. Cu, Remko.
 
 [![VHDL-piano with PS/2 keyboard interface shield](https://img.youtube.com/vi/MyB9OI17_hk/0.jpg)](https://www.youtube.com/watch?v=MyB9OI17_hk)
 
