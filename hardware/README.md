@@ -14,12 +14,13 @@ The PS/2 keyboard interface shield for DE10-Lite is provided in the hope that it
   
 ## License
 The PS/2 keyboard interface shield for DE10-Lite is part of the SOC classes for HAN Engineering Hoofdmodule Embedded Hardware Engineering.
+
 The design of the PS/2 keyboard interface shield for DE10-Lite is free: You may redistribute it and/or modify it under the terms of a Creative  Commons Attribution-NonCommercial 4.0 International License (http://creativecommons.org/licenses/by-nc/4.0/) by Remko Welling (http://han-ese.nl/~rwelling) E-mail: remko.welling@han.nl 
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
 
 ## Documentation
-The shield is designed with reprodction in mind. Component selection was made to allow a introduction to working with SMD components an doldering of those. Therefore 1206 sized components are used in the design.
+The PS/2 keyboard interface shield is designed with reprodction in mind. Component selection was made to allow a introduction to working with SMD components an doldering of those. Therefore 1206 sized components are used in the design.
 
 The shield was designed using 
 
@@ -67,5 +68,9 @@ R9   120     M1206              RESISTOR
 X1   DIN6FE  M_DIN6             6-PIN MINI-DIN female connector
 LS1  SPEAKER PCB_MOUNT_SPEAKER  Speaker
 ```
+
+# Soldering the PS/2 keyboard shield
+
+http://www.davidhaillant.com/smd-soldering/
 
 
