@@ -31,7 +31,7 @@ The purpose of the PS/2 keyboard interface shield to add neccessary electronics 
 The PS/2 keyboard interface shield is designed with reproduction in mind. Component selection was made to allow a introduction to working with SMD components an doldering of those. Therefore 1206 sized components are used in the design to introduce to SMD and regular trough-hole components.
 
 The shield delivers:
- - PS/2 compatible interface to the FPGA on teh DE10-Lite board. Any PS/2 compatible keyboard can be connected to the shield.
+ - PS/2 compatible interface to the FPGA on the DE10-Lite board. Any PS/2 compatible keyboard can be connected to the shield.
  - Loudspeaker to make tones of the VHDL-piano audible.
  
 ### USB-keyboards
