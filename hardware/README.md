@@ -99,7 +99,7 @@ When soldering the recommended order is to work "from small to big".
 
 # Testing
 
-To test the PS/2 keyboard interface shield use the Quartus project that is provided with this repository:[Hardware test for PS/2 interface shield for DE10-Lite](harwareTest/README.md)
+To test the PS/2 keyboard interface shield use the Quartus project that is provided with this repository: [Hardware test for PS/2 interface shield for DE10-Lite](harwareTest/README.md)
 
 # Conclusion
 Soldering is fun! I hope you enjoy your self-made PS/2 keyboard interface shield and the joy of playing your VHDL piano.

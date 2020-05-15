@@ -7,6 +7,16 @@ This test is for hardware testing of the PS/2 keyboard interface shield for DE10
 
 Currently testing of sending data to the PS/2 keyboard is not implemented.
 
+## User interface
+
+ - Key 0 (function "BB") enables 1 khz test audio.
+ - Key 1 is the internal reset. 
+ 
+ - LED 0 (A) OFF: Reset is active, ON: running state.
+ - LED 1 (B) ON: Audio is enabled by pressing KEY 0, OFF: No audio.
+ - LED 2 (C) FLASHING: clock is received from teh keyboard
+ - LED 3 (D) FLASHING: data is received from teh keyboard
+
 ```
           PS/2 interface shield for DE10-Lite
 
@@ -44,6 +54,10 @@ PS/2 conn. =>||      |                    |
 # Testing
 
 The following test-script will run all primary tests:
+
+ 1: Loudspeaker test
+ 2: Receiving keyboard data
+ 3: Sending data to teh keyboard (not implemented)
 
 ## Test 1: Loudspeaker
 
