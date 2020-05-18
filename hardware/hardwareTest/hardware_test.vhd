@@ -123,11 +123,11 @@ ARCHITECTURE implementation OF hardware_test IS
    SIGNAL PS2_KBCLK,                --! PS2 keyboard clock signal (20 KHz domain)
           PS2_KBDAT     : STD_LOGIC;   --! PS2 keyboard data signal (20 KHz domain)
    
-	SIGNAL tone_1khz     : STD_LOGIC;   --! 1 khz tone 
+   SIGNAL tone_1khz     : STD_LOGIC;   --! 1 khz tone 
    SIGNAL counter_1khz  : integer RANGE 0 TO 24999 := 0;
   
-	SIGNAL kb_clock      : STD_LOGIC;   --! 20 khz clock for keyboard
-	SIGNAL counter_20khz : integer RANGE 0 TO 1249 := 0;
+   SIGNAL kb_clock      : STD_LOGIC;   --! 20 khz clock for keyboard
+   SIGNAL counter_20khz : integer RANGE 0 TO 1249 := 0;
   
 BEGIN
 
@@ -168,8 +168,8 @@ BEGIN
    -- Because of negative logic of KEY it is inverted.
    LEDR(1)     <= tone_1khz AND NOT KEY(0);
    arduino_io3 <= tone_1khz AND NOT KEY(0);
-	
-	-- 20 khz clock generator for keyboard.
+   
+   -- 20 khz clock generator for keyboard.
    clock_generator_20khz: PROCESS (reset, MAX10_CLK1_50)
    BEGIN
       IF (reset = '0') THEN
