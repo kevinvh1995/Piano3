@@ -99,6 +99,15 @@ LIBRARY ieee;
 USE     ieee.STD_LOGIC_1164.all;
 --------------------------------------------------------------------
 ENTITY hardware_test IS
+   GENERIC (
+      CONSTANT writeLedCommand : STD_LOGIC_VECTOR(7 DOWNTO 0) := X"ED";
+      CONSTANT ACK             : STD_LOGIC_VECTOR(7 DOWNTO 0) := X"FA";
+      CONSTANT NACK            : STD_LOGIC_VECTOR(7 DOWNTO 0) := X"FE";
+      CONSTANT CapsLockLED     : STD_LOGIC_VECTOR(7 DOWNTO 0) := "00000100";
+      CONSTANT NumLockLED      : STD_LOGIC_VECTOR(7 DOWNTO 0) := "00000010";
+      CONSTANT ScrollLockLED   : STD_LOGIC_VECTOR(7 DOWNTO 0) := "00000001"
+   );
+
    PORT(
       MAX10_CLK1_50 : IN  STD_LOGIC;                  --! 50 MHz clock on board the Cycone MAX 10 FPGA
       arduino_io4,                                    --! PS2 keyboard clock signal
@@ -110,13 +119,16 @@ ENTITY hardware_test IS
 END hardware_test;
 --------------------------------------------------------------------
 ARCHITECTURE implementation OF hardware_test IS
-   SIGNAL reset      : STD_LOGIC;
+   SIGNAL reset         : STD_LOGIC;
    SIGNAL PS2_KBCLK,                --! PS2 keyboard clock signal (20 KHz domain)
-          PS2_KBDAT  : STD_LOGIC;   --! PS2 keyboard data signal (20 KHz domain)
-   SIGNAL tone_1khz  : STD_LOGIC;   --! 1 khz tone 
-   SIGNAL counter    : integer RANGE 0 TO 24999 := 0;
+          PS2_KBDAT     : STD_LOGIC;   --! PS2 keyboard data signal (20 KHz domain)
+   
+	SIGNAL tone_1khz     : STD_LOGIC;   --! 1 khz tone 
+   SIGNAL counter_1khz  : integer RANGE 0 TO 24999 := 0;
   
-
+	SIGNAL kb_clock      : STD_LOGIC;   --! 20 khz clock for keyboard
+	SIGNAL counter_20khz : integer RANGE 0 TO 1249 := 0;
+  
 BEGIN
 
    -- Connect PS/2 interface ports to signals for readability
@@ -138,14 +150,14 @@ BEGIN
    BEGIN
       IF (reset = '0') THEN
          tone_1khz <= '0';
-         counter <= 0;
+         counter_1khz <= 0;
       ELSIF rising_edge(MAX10_CLK1_50) THEN
     
-         IF (counter = 24999) THEN
+         IF (counter_1khz = 24999) THEN
             tone_1khz <= NOT(tone_1khz);
-            counter <= 0;
+            counter_1khz <= 0;
          ELSE
-            counter <= counter + 1;
+            counter_1khz <= counter_1khz + 1;
          END IF;
     
       END IF;
@@ -156,5 +168,23 @@ BEGIN
    -- Because of negative logic of KEY it is inverted.
    LEDR(1)     <= tone_1khz AND NOT KEY(0);
    arduino_io3 <= tone_1khz AND NOT KEY(0);
+	
+	-- 20 khz clock generator for keyboard.
+   clock_generator_20khz: PROCESS (reset, MAX10_CLK1_50)
+   BEGIN
+      IF (reset = '0') THEN
+         kb_clock <= '0';
+         counter_20khz <= 0;
+      ELSIF rising_edge(MAX10_CLK1_50) THEN
+    
+         IF (counter_20khz = 1249) THEN
+            kb_clock <= NOT(kb_clock);
+            counter_20khz <= 0;
+         ELSE
+            counter_20khz <= counter_20khz + 1;
+         END IF;
+    
+      END IF;
+   END PROCESS clock_generator_20khz;
 
 END implementation;
