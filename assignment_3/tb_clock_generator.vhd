@@ -24,6 +24,8 @@
 -- Simulation tool : ModelSim-Altera (VHDL)
 -- 
 
+-- Modification 25-5-2020 by WLGRW (remko.welling@han.nl) to make keys mentioned consistent with HEX-codes.
+
 LIBRARY ieee;                                               
 USE ieee.std_logic_1164.all;                                
 
@@ -84,120 +86,120 @@ BEGIN
 	
 	wait for 5000 ns;
 	-- send keystroke up (Z)
-	key <= "01011010"; 				-- key "Z" (0x5A) is pressed;
+	key <= "01011010"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 2000 ns;
-	key <= "00000000"; 				-- key "Z" (0x5A) is pressed;
+	key <= "00000000"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 3000 ns;
 	-- send keystroke up (Z)
-	key <= "01011010"; 				-- key "Z" (0x5A) is pressed;
+	key <= "01011010"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 2000 ns;
-	key <= "00000000"; 				-- key "Z" (0x5A) is pressed;
+	key <= "00000000"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 3000 ns;
 	-- send keystroke up (Z)
-	key <= "01011010"; 				-- key "Z" (0x5A) is pressed;
+	key <= "01011010"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 2000 ns;
-	key <= "00000000"; 				-- key "Z" (0x5A) is pressed;
+	key <= "00000000"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 3000 ns;
 	-- send keystroke up (Z)
-	key <= "01011010"; 				-- key "Z" (0x5A) is pressed;
+	key <= "01011010"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 2000 ns;
-	key <= "00000000"; 				-- key "Z" (0x5A) is pressed;
+	key <= "00000000"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 3000 ns;
 	-- send keystroke down (A)
-	key <= "01010010"; 				-- key "A" (0x52) is pressed;
+	key <= "01010010"; 				-- key " ' " (0x52) is pressed;
 	wait for 2000 ns;
-	key <= "00000000"; 				-- key "Z" (0x5A) is pressed;
+	key <= "00000000"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 3000 ns;
 	-- send keystroke down (A)
-	key <= "01010010"; 				-- key "A" (0x52) is pressed;
+	key <= "01010010"; 				-- key " ' " (0x52) is pressed;
 	wait for 2000 ns;
-	key <= "00000000"; 				-- key "Z" (0x5A) is pressed;
+	key <= "00000000"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 3000 ns;
 	-- send keystroke down (A)
-	key <= "01010010"; 				-- key "A" (0x52) is pressed;
+	key <= "01010010"; 				-- key " ' " (0x52) is pressed;
 	wait for 2000 ns;
-	key <= "00000000"; 				-- key "Z" (0x5A) is pressed;
+	key <= "00000000"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 3000 ns;
 	-- send keystroke down (A)
-	key <= "01010010"; 				-- key "A" (0x52) is pressed;
+	key <= "01010010"; 				-- key " ' " (0x52) is pressed;
 	wait for 2000 ns;
-	key <= "00000000"; 				-- key "Z" (0x5A) is pressed;
+	key <= "00000000"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 3000 ns;
 	-- send keystroke down (A)
-	key <= "01010010"; 				-- key "A" (0x52) is pressed;
+	key <= "01010010"; 				-- key " ' " (0x52) is pressed;
 	wait for 2000 ns;
-	key <= "00000000"; 				-- key "Z" (0x5A) is pressed;
+	key <= "00000000"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 3000 ns;
 	-- send keystroke down (A)
-	key <= "01010010"; 				-- key "A" (0x52) is pressed;
+	key <= "01010010"; 				-- key " ' " (0x52) is pressed;
 	wait for 2000 ns;
-	key <= "00000000"; 				-- key "Z" (0x5A) is pressed;
+	key <= "00000000"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 3000 ns;
 	-- send keystroke down (A)
-	key <= "01010010"; 				-- key "A" (0x52) is pressed;
+	key <= "01010010"; 				-- key " ' " (0x52) is pressed;
 	wait for 2000 ns;
-	key <= "00000000"; 				-- key "Z" (0x5A) is pressed;
+	key <= "00000000"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 3000 ns;
 	-- send keystroke up (Z)
-	key <= "01011010"; 				-- key "Z" (0x5A) is pressed;
+	key <= "01011010"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 2000 ns;
-	key <= "00000000"; 				-- key "Z" (0x5A) is pressed;
+	key <= "00000000"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 3000 ns;
 	-- send keystroke up (Z)
-	key <= "01011010"; 				-- key "Z" (0x5A) is pressed;
+	key <= "01011010"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 2000 ns;
-	key <= "00000000"; 				-- key "Z" (0x5A) is pressed;
+	key <= "00000000"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 3000 ns;
 	-- send keystroke up (Z)
-	key <= "01011010"; 				-- key "Z" (0x5A) is pressed;
+	key <= "01011010"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 2000 ns;
-	key <= "00000000"; 				-- key "Z" (0x5A) is pressed;
+	key <= "00000000"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 3000 ns;
 	
 	
 	
 	
 	-- send keystroke up (Z)
-	key <= "01011010"; 				-- key "Z" (0x5A) is pressed;
+	key <= "01011010"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 5120 ns;
 	-- send keystroke up (Z)
-	key <= "01011010"; 				-- key "Z" (0x5A) is pressed;
+	key <= "01011010"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 5120 ns;
 	-- send keystroke up (Z)
-	key <= "01011010"; 				-- key "Z" (0x5A) is pressed;
+	key <= "01011010"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 5120 ns;
 	-- send keystroke up (Z)
-	key <= "01011010"; 				-- key "Z" (0x5A) is pressed;
+	key <= "01011010"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 5120 ns;
 	-- send keystroke down (A)
-	key <= "01010010"; 				-- key "A" (0x52) is pressed;
+	key <= "01010010"; 				-- key " ' " (0x52) is pressed;
 	wait for 5120 ns;
 	-- send keystroke down (A)
-	key <= "01010010"; 				-- key "A" (0x52) is pressed;
+	key <= "01010010"; 				-- key " ' " (0x52) is pressed;
 	wait for 5120 ns;
 	-- send keystroke down (A)
-	key <= "01010010"; 				-- key "A" (0x52) is pressed;
+	key <= "01010010"; 				-- key " ' " (0x52) is pressed;
 	wait for 5120 ns;
 	-- send keystroke down (A)
-	key <= "01010010"; 				-- key "A" (0x52) is pressed;
+	key <= "01010010"; 				-- key " ' " (0x52) is pressed;
 	wait for 5120 ns;
 	-- send keystroke down (A)
-	key <= "01010010"; 				-- key "A" (0x52) is pressed;
+	key <= "01010010"; 				-- key " ' " (0x52) is pressed;
 	wait for 5120 ns;
 	-- send keystroke down (A)
-	key <= "01010010"; 				-- key "A" (0x52) is pressed;
+	key <= "01010010"; 				-- key " ' " (0x52) is pressed;
 	wait for 5120 ns;
 	-- send keystroke down (A)
-	key <= "01010010"; 				-- key "A" (0x52) is pressed;
+	key <= "01010010"; 				-- key " ' " (0x52) is pressed;
 	wait for 5120 ns;
 	-- send keystroke up (Z)
-	key <= "01011010"; 				-- key "Z" (0x5A) is pressed;
+	key <= "01011010"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 5120 ns;
 	-- send keystroke up (Z)
-	key <= "01011010"; 				-- key "Z" (0x5A) is pressed;
+	key <= "01011010"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 5120 ns;
 	-- send keystroke up (Z)
-	key <= "01011010"; 				-- key "Z" (0x5A) is pressed;
+	key <= "01011010"; 				-- key "Enter" (0x5A) is pressed;
 	wait for 5120 ns;
 			  
 			  
