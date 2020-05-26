@@ -10,8 +10,8 @@
 --!
 --! Nr:    |Date:      |Author: |Remarks:
 --! -------|-----------|--------|-----------------------------------
---! 001    |22-3-2020  |WLGRW   |Removed ARCHITECTURE and added documentation
---!        |           |        |Added to Git repository.
+--! 001    |22-3-2020  |WLGRW   |Removed ARCHITECTURE and added documentation Added to Git repository.
+--! 002    |20-5-2020  |WLGRW   | Corrected coponent ENTITY missing
 --!
 --! # Assignment 2: implementation of component readkey
 --! 
@@ -86,7 +86,7 @@ architecture readkey_struct of readkey is
 BEGIN
    
 --! component Clock_domain_crossing to interface between 20 KHz and 50 MHz domain
-   L_ClockDomainCrossing: work.clock_domain_crossing PORT MAP(
+   L_ClockDomainCrossing: ENTITY work.clock_domain_crossing PORT MAP(
 --    + component port
 --    |              + Internal port or signal
 --    |              |
