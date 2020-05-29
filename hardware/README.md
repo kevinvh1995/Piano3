@@ -86,6 +86,12 @@ Soldering the PS/2 keyboard interface shield kit is fun!
  - For those who start with soldering, Sparkfun hase a nice how-to availabale: https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering/
  - For soldering SMD components the instructions of David Haillant are recommended: http://www.davidhaillant.com/smd-soldering/
  
+In this (Dutch) instruction we are soldering SMD 1206 components on the PS/2 keyboard interface PCB.
+
+[![Solder instruction SMD 1206 components](https://img.youtube.com/vi/M2XmO08fLxg/0.jpg)](https://www.youtube.com/watch?v=M2XmO08fLxg)
+
+
+ 
 ## Recommended order
 When soldering the recommended order is to work "from small to big".
 
