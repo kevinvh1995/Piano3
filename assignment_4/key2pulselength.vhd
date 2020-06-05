@@ -15,10 +15,19 @@
 --! 003    |7-4-2020   |WLGRW   |Transformation to assignment
 --!
 --! # Assignment 4:key2pulselength
---!
 --! 
 --! 
 --! \verbatim
+--! 
+--!              +-------------------+
+--!              |                   |
+--! key[7..0] -->|                   |
+--!              | pulselength2audio |--> pulselength[12..0]
+--!     reset -->|                   |
+--!              |                   |
+--!              +-------------------+
+--!
+--! Figure: input-process-output diagram of pulselength2audio
 --!
 --! \endverbatim
 --!
