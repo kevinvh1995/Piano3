@@ -12,6 +12,9 @@
 --! -------|-----------|--------|-----------------------------------
 --! 001    |22-3-2020  |WLGRW   |Removed ARCHITECTURE and added documentation Added to Git repository.
 --! 002    |20-5-2020  |WLGRW   | Corrected coponent ENTITY missing
+--! 003    |6-7-2020   |WLGRW   |Added a todo not to modify the header of the file to represent teh students that worked on the file.
+--!
+--! \todo MODIFY THE HEADER OF THIS FILE TO REPRESENT THE NAMES OF THE STUDENTS WORKING ON IT.
 --!
 --! # Assignment 2: implementation of component readkey
 --! 
@@ -19,15 +22,6 @@
 --!  - clock_domain_crossing
 --!  - showkey
 --!  - constantkey
---! 
---! 
---! 
---! 
---! 
---! 
---! 
---!
---! 
 --! 
 --! 
 --!

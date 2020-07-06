@@ -11,6 +11,9 @@
 --! Nr:    |Date:      |Author: |Remarks:
 --! -------|-----------|--------|-----------------------------------
 --! 001    |20-3-2020  |WLGRW   |Inital version
+--! 002    |6-7-2020   |WLGRW   |Added a todo not to modify the header of the file to represent teh students that worked on the file.
+--!
+--! \todo MODIFY THE HEADER OF THIS FILE TO REPRESENT THE NAMES OF THE STUDENTS WORKING ON IT.
 --!
 --! # Opdracht 1: Deelopdracht showkey
 --!

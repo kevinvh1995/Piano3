@@ -14,6 +14,9 @@
 --! 002    |28-3-2015  |WLGRW   |Modification to set dot in display  
 --! 003    |13-2-2020  |WLGRW   |Update to MAX10 on DE10-Lite board
 --! 004    |31-3-2020  |WLGRW   |Modification for assignment 0-a
+--! 005    |6-7-2020   |WLGRW   |Added a todo not to modify the header of the file to represent teh students that worked on the file.
+--!
+--! \todo MODIFY THE HEADER OF THIS FILE TO REPRESENT THE NAMES OF THE STUDENTS WORKING ON IT.
 --!
 --! # 7 segment decoder
 --!

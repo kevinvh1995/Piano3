@@ -11,8 +11,10 @@
 --!
 --! Nr:    |Date:      |Author: |Remarks:
 --! -------|-----------|--------|-----------------------------------
---! 001    |21-3-2020  |WLGRW   |Removed ARCHITECTURE and added documentation
---!        |           |        |Added to Git repository.
+--! 001    |21-3-2020  |WLGRW   |Removed ARCHITECTURE and added documentation Added to Git repository.
+--! 002    |6-7-2020   |WLGRW   |Added a todo not to modify the header of the file to represent teh students that worked on the file.
+--!
+--! \todo MODIFY THE HEADER OF THIS FILE TO REPRESENT THE NAMES OF THE STUDENTS WORKING ON IT.
 --!
 --! # Assignment 4
 --! 

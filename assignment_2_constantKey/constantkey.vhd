@@ -14,6 +14,9 @@
 --! 002    |28-3-2015  |WLGRW   |Corrections in output key and dig2 and dig 3
 --! 003    |2-4-2015   |WLGRW   |Corrections to states to meet data stream from keyboard.
 --! 004    |13-2-2020  |WLGRW   |Update to MAX10 on DE10-Lite board
+--! 005    |6-7-2020   |WLGRW   |Added a todo not to modify the header of the file to represent teh students that worked on the file.
+--!
+--! \todo MODIFY THE HEADER OF THIS FILE TO REPRESENT THE NAMES OF THE STUDENTS WORKING ON IT.
 --!
 --! # Opdracht 2: Deelopdracht constantkey
 --!

@@ -13,6 +13,9 @@
 --! 001    |23-8-2015  |WLGRW   |Inital version
 --! 002    |13-2-2020  |WLGRW   |Update to MAX10 on DE10-Lite board
 --! 003    |7-4-2020   |WLGRW   |Modification for assignment
+--! 004    |6-7-2020   |WLGRW   |Added a todo not to modify the header of the file to represent teh students that worked on the file.
+--!
+--! \todo MODIFY THE HEADER OF THIS FILE TO REPRESENT THE NAMES OF THE STUDENTS WORKING ON IT.
 --! 
 --! # Final assignment (7) HM-ESH-SOC
 --!
