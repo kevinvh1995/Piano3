@@ -2,7 +2,7 @@
 --! \file      readkey.vhd
 --! \date      see top of 'Version History'
 --! \brief     Read keys from keyboard
---! \author    Remko WellINg (WLGRW) remko.wellINg@han.nl
+--! \author    Remko Welling (WLGRW) remko.welling@han.nl
 --! \copyright HAN TF ELT/ESE Arnhem 
 --!
 --! Version History:
@@ -19,15 +19,6 @@
 --!  - clock_domain_crossing
 --!  - showkey
 --!  - constantkey
---! 
---! 
---! 
---! 
---! 
---! 
---! 
---!
---! 
 --! 
 --! 
 --!
