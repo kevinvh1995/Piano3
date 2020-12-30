@@ -5,6 +5,16 @@
 --! \author    Remko Welling (WLGRW) remko.welling@han.nl
 --! \copyright HAN TF ELT/ESE Arnhem 
 --!
+--! \todo Students that submit this code have to complete their details:
+--!
+--! - Student 1 name         : 
+--! - Student 1 studentnumber: 
+--! - Student 1 email address: 
+--!
+--! - Student 2 name         : 
+--! - Student 2 studentnumber: 
+--! - Student 2 email address: 
+--!
 --! Version History:
 --! ----------------
 --!
