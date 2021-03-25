@@ -71,11 +71,11 @@ R1   2K      M1206              RESISTOR
 R2   2K      M1206              RESISTOR
 R3   2K      M1206              RESISTOR
 R4   2K      M1206              RESISTOR
-R5   120     M1206              RESISTOR
-R6   120     M1206              RESISTOR
-R7   120     M1206              RESISTOR
-R8   120     M1206              RESISTOR
-R9   120     M1206              RESISTOR
+R5   200     M1206              RESISTOR
+R6   200     M1206              RESISTOR
+R7   200     M1206              RESISTOR
+R8   200     M1206              RESISTOR
+R9   200     M1206              RESISTOR
 X1   DIN6FE  M_DIN6             6-PIN MINI-DIN female connector
 LS1  SPEAKER PCB_MOUNT_SPEAKER  Speaker
 ```
@@ -91,7 +91,6 @@ In this (Dutch) instruction we are soldering SMD 1206 components on the PS/2 key
 [![Solder instruction SMD 1206 components](https://img.youtube.com/vi/M2XmO08fLxg/0.jpg)](https://www.youtube.com/watch?v=M2XmO08fLxg)
 
 
- 
 ## Recommended order
 When soldering the recommended order is to work "from small to big".
 
@@ -114,4 +113,13 @@ You make me very happy when you share your pictures or video. Cu, Remko.
 
 [![VHDL-piano with PS/2 keyboard interface shield](https://img.youtube.com/vi/MyB9OI17_hk/0.jpg)](https://www.youtube.com/watch?v=MyB9OI17_hk)
 
+# Errata
+Date      | Issue
+----------|-------------
+25-3-2021:| Resistors R5 to R9 have been replaced by 200 ohm.
 
+# Hacks
+Some hacks are possible to the board:
+
+## Increase speaker audio.
+The loudspeaker audio is attennuated using R9. To increase audio volume replace R9 with 0 ohm (bridge).
