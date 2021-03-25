@@ -53,7 +53,7 @@ For soldering the component layout is made availabale separately. Click on "[Ful
 ![Component layout](images/PS2SpeakerShield_BoardTopView_small.png?raw=true "Component layout")
 
 # Ordering
-For PCB ordering and delivery in Europe, Aisler is recommended: https://aisler.net/
+For PCB ordering and delivery in Europe, Aisler is recommended: https://aisler.net/ where you can directly order the board following this link: https://aisler.net/p/FWVGCYFB
 
 ## BOM
 The Bill of Materials (BOM) contains easy obtainable components that can be purchased online:
