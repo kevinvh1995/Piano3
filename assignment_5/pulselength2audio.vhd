@@ -52,7 +52,7 @@ ENTITY pulselength2audio IS
    PORT( 
       reset      : IN  std_logic;                 --! Reset active is '0'
       clk_dev    : IN  std_logic;                 --! clock from programmeable clock devider
-      pulslength : IN  integer RANGE 0 TO 131071; --! incoming value from key2pulselength
+      pulslength : IN  integer RANGE 0 TO 8191;   --! incoming value from key2pulselength
       audiol,
       audior     : OUT std_logic                  --! Audio outputs
    );                        
