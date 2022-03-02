@@ -6,6 +6,16 @@
 --! \author    Remko Welling (WLGRW) remko.welling@han.nl
 --! \copyright HAN TF ELT/ESE Arnhem 
 --!
+--! \todo Students that submit this code have to complete their details:
+--!
+--! Student 1 name         : 
+--! Student 1 studentnumber: 
+--! Student 1 email address: 
+--!
+--! Student 2 name         : 
+--! Student 2 studentnumber: 
+--! Student 2 email address: 
+--!
 --! Version History:
 --! ----------------
 --!
@@ -14,7 +24,6 @@
 --! 001    |21-3-2020  |WLGRW   |Removed ARCHITECTURE and added documentation Added to Git repository.
 --! 002    |6-7-2020   |WLGRW   |Added a todo not to modify the header of the file to represent teh students that worked on the file.
 --!
---! \todo MODIFY THE HEADER OF THIS FILE TO REPRESENT THE NAMES OF THE STUDENTS WORKING ON IT.
 --!
 --! # Assignment 4
 --! 
