@@ -5,6 +5,16 @@
 --! \author    Remko Welling (WLGRW) remko.welling@han.nl
 --! \copyright HAN TF ELT/ESE Arnhem 
 --!
+--! \todo Students that submit this code have to complete their details:
+--!
+--! Student 1 name         : 
+--! Student 1 studentnumber: 
+--! Student 1 email address: 
+--!
+--! Student 2 name         : 
+--! Student 2 studentnumber: 
+--! Student 2 email address: 
+--!
 --! Version History:
 --! ----------------
 --!
@@ -14,16 +24,6 @@
 --! 002    |28-3-2015  |WLGRW   |Corrections in output key and dig2 and dig 3
 --! 003    |2-4-2015   |WLGRW   |Corrections to states to meet data stream from keyboard.
 --! 004    |13-2-2020  |WLGRW   |Update to MAX10 on DE10-Lite board
---!
---! # Opdracht 2: Deelopdracht constantkey
---!
---! 
---! 
---! \verbatim
---!
---! \ENDverbatim
---!
---! \todo Complete documentation
 --!
 --------------------------------------------------------------------
 LIBRARY ieee;

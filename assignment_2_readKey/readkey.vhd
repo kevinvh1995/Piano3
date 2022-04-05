@@ -1,8 +1,20 @@
+
+--  #########################################################################
+--  #########################################################################
+--  ##                                                                     ##
+--  ##                                                                     ##
+--  ## File readkey.vhd is delivered as is and is not part of assignments  ##
+--  ##                                                                     ##
+--  ##      No modification or adaptations by students are required        ##
+--  ##                                                                     ##
+--  #########################################################################
+--  #########################################################################
+
 --------------------------------------------------------------------
 --! \file      readkey.vhd
 --! \date      see top of 'Version History'
 --! \brief     Read keys from keyboard
---! \author    Remko WellINg (WLGRW) remko.wellINg@han.nl
+--! \author    Remko Welling (WLGRW) remko.welling@han.nl
 --! \copyright HAN TF ELT/ESE Arnhem 
 --!
 --! Version History:
@@ -10,49 +22,15 @@
 --!
 --! Nr:    |Date:      |Author: |Remarks:
 --! -------|-----------|--------|-----------------------------------
---! 001    |22-3-2020  |WLGRW   |Removed ARCHITECTURE and added documentation Added to Git repository.
+--! 001    |22-3-2020  |WLGRW   | Removed ARCHITECTURE and added documentation Added to Git repository.
 --! 002    |20-5-2020  |WLGRW   | Corrected coponent ENTITY missing
---! 003    |6-7-2020   |WLGRW   |Added a todo not to modify the header of the file to represent teh students that worked on the file.
---!
---! \todo MODIFY THE HEADER OF THIS FILE TO REPRESENT THE NAMES OF THE STUDENTS WORKING ON IT.
---!
---! # Assignment 2: implementation of component readkey
+--! 003    |6-7-2020   |WLGRW   | Added a todo not to modify the header of the file to represent teh students that worked on the file.
 --! 
 --! readkey combines the following components:
 --!  - clock_domain_crossing
 --!  - showkey
 --!  - constantkey
---! 
---! 
 --!
---! \verbatim
---! 
---!              +-------------------+
---!              |                   |
---! key[7..0] -->|                   |
---!              | pulselength2audio |--> pulselength[12..0]
---!     reset -->|                   |
---!              |                   |
---!              +-------------------+
---!
---! Figure: input-process-output diagram of pulselength2audio
---!
---! \endverbatim
---!
---! ## Instructions
---! 
---!  - 
---!  - 
---!  - 
---!  - 
---!    
---!    
---! 
---! ## Notes
---! 1. This code is tested on Quartus 19.1.0
---! 2. Ports n this code are not mapped to pins.
-
-
 --------------------------------------------------------------------
 LIBRARY ieee;
 USE ieee.STD_LOGIC_1164.all;
