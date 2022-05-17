@@ -60,8 +60,8 @@ ENTITY showkey IS
       reset     : IN  std_logic;                    -- reset signal active low '0'
       kbclock   : IN  std_logic;                    -- clock from keyboard in 50 MHz domain
       kbdata    : IN  std_logic;                    -- serial data from the keyboard in 50 MHz domain
-      dig0,                                         -- show key pressed on display in hex (MSB)
-      dig1      : OUT STD_LOGIC_VECTOR(7 DOWNTO 0); -- show key pressed on display in hex (LSB)
+      dig0,                                         -- show key pressed on display in hex;
+      dig1      : OUT STD_LOGIC_VECTOR(7 DOWNTO 0); -- dig0 (MSByte) dig1 (LSByte)
       scancode  : OUT STD_LOGIC_VECTOR(7 DOWNTO 0); -- received byte
       byte_read : OUT std_logic                     -- '1' if byte received 
    );
