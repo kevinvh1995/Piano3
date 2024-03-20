@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 0)
+  (lib (name "HAN_DE10-Lite_PS2SpeakerShield_001-eagle-import")(type "KiCad")(uri "${KIPRJMOD}/HAN_DE10-Lite_PS2SpeakerShield_001-eagle-import.kicad_sym")(options "")(descr ""))
+)

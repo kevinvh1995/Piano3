@@ -1,0 +1,3 @@
+[submodule "hardware/kicad/HAN_DE10-Lite_PS2SpeakerShield_010/my-KiCad-library"]
+	path = hardware/kicad/HAN_DE10-Lite_PS2SpeakerShield_010/my-KiCad-library
+	url = https://github.com/pe1mew/my-KiCad-library.git
