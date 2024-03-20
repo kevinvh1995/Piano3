@@ -45,7 +45,13 @@ The electronics design for the shield is copied from the DE0-CV FPGA board schem
 The [Eagle schematic file ](eagle/HAN_DE10-Lite_PS2SpeakerShield_001.sch) is available for download.
 
 ## PCB design
-The [Eagle board file ](eagle/HAN_DE10-Lite_PS2SpeakerShield_001.brd) is available for download.
+PCB design was originally in Eagle but was imported in KiCad for future maintenance. 
+
+###  Eagle 
+This version is 001. The [Eagle board file ](eagle/HAN_DE10-Lite_PS2SpeakerShield_001.brd) is available for download.
+
+### KiCad
+This version is 011. The complete KiCad project is made available for download. 
 
 ## Component layout
 For soldering the component layout is made availabale separately. Click on "[Full size component layout](images/PS2SpeakerShield_BoardTopView.png)" to view or download the component layout. 
