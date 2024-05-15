@@ -24,6 +24,7 @@
 --! 002    |13-2-2020  |WLGRW   |Update to MAX10 on DE10-Lite board
 --! 003    |7-4-2020   |WLGRW   |Transformation to assignment
 --! 004    |6-7-2020   |WLGRW   |Added a todo not to modify the header of the file to represent teh students that worked on the file.
+--! 004    |15-5-2024  |WLGRW   |corrected comment.
 --!
 --!
 --! # Assignment 4:key2pulselength
@@ -43,7 +44,7 @@
 --!
 --! \endverbatim
 --!
---!     |       |       |         |           | @50 MHz
+--!     |       |       |         |           | @6,25MHz
 --!  No | Toets | (Hex) | Note    | Freq (Hz) | freq/2 (Hz)
 --!  ---|-------|------ |---------|-----------|------------
 --!  1  | TAB   | 0D    | A       | 440       | 7102
