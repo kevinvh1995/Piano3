@@ -22,36 +22,15 @@
 --! Nr:    |Date:      |Author: |Remarks:
 --! -------|-----------|--------|-----------------------------------
 --! 001    |21-3-2020  |WLGRW   |Removed ARCHITECTURE and added documentation Added to Git repository.
---! 002    |6-7-2020   |WLGRW   |Added a todo not to modify the header of the file to represent teh students that worked on the file.
---!
+--! 002    |6-7-2020   |WLGRW   |Added a todo not to modify the header of the file to represent the students that worked on the file.
+--! 003    |8-7-2024   |WLGRW   | Removed incorrect doucmentation
 --!
 --! # Assignment 4
 --! 
---! In this assignment component key2pulselength is designed and implemented. 
---! The input-process-output diagram is presented in the Figure
+--! In this assignment component pulselength2audio is designed and implemented. 
 --! 
---! In this assignment key is converted to the tone that is represented by 
---! an integer value: pulselength. Pulselength represents the number of 
---! times that clk_div will generate a clock pulse (single period). 
---! Doing so, pulselength specifies halve the period time of the audio tone. 
+--! Use the details of the design in paragraph 5.6 Assignment 5: Component pulselength2audio
 --!
---! The combination of pulselength and clk_div is implemented in 
---! pulselength2audio in Assignment 5: Component pulselength2audio.
---! To determine the right value of clk_div the theory of scales shall be used. 
---!
---!
---! ## Instructions
---! 
---!  - Use this top level ENTITY for component key2pulselength
---!  - Design the ARCHITECTURE VHDL for component key2pulselength
---!  - Investigate the technology map in RTL viewer and share your findings
---!  - Simulate the functional operation of key2pulselength with:
---!    - reset
---!    - key <= hex 0; hex A; hex Z; hex 0D; hex 26; hex 3C; hex 54; hex 5D
---! 
---! ## Notes
---! 1. This code is tested on Quartus 19.1.0
---! 2. Ports n this code are not mapped to pins.
 --------------------------------------------------------------------
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
