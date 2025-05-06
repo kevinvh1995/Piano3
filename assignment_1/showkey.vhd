@@ -67,13 +67,55 @@ ENTITY showkey IS
    );
 END showkey;
 --------------------------------------------------------------------
+--------------------------------------------------------------------
 ARCHITECTURE LogicFunction OF showkey IS
 
-      -- Add here the declarations for showkey
+    -- Add declarations
+    signal bit_counter 		: integer range 0 to 10 := 0;
+    signal shift_register 	: std_logic_vector(10 downto 0) := (others => '0');
+	 signal dig0_register 	: std_logic_vector(7 downto 0) := (others => '0');
+    signal dig1_register	: std_logic_vector(7 downto 0) := (others => '0');
+
 
 BEGIN 
 
-      -- Add here the VHDL code for showkey
+    process(kbclock, reset)
+    begin
+        if reset = '0' then
+            bit_counter <= 0;
+            shift_register <= (others => '0');
+            dig0_register <= (others => '0');
+            dig1_register <= (others => '0');
+            scancode <= (others => '0');
+            byte_read <= '0';
+        
+        elsif falling_edge(kbclock) then 
 
-end LogicFunction;
---------------------------------------------------------------------
+            if bit_counter = 0 then
+                byte_read <= '0';
+            end if;
+
+            if bit_counter <= 10 then
+                shift_register(bit_counter) <= kbdata;
+                bit_counter <= bit_counter + 1;
+            end if;
+					 
+            if bit_counter = 10 then
+                scancode <= shift_register(8 downto 1);						-- Set bitstring into shift register
+
+                dig1_register <= dig0_register;
+                dig0_register(3 downto 0) <= shift_register(4 downto 1); -- Low nibble
+                dig0_register(7 downto 4) <= shift_register(8 downto 5); -- High nibble 
+
+                byte_read 		<= '1';
+                bit_counter 	<= 0;
+            end if;
+        end if;
+    end process;
+
+    -- Drive outputs from internal registers
+    dig0 <= dig0_register;
+    dig1 <= dig1_register;
+
+END ARCHITECTURE LogicFunction;
+
