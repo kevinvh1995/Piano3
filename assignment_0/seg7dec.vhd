@@ -7,9 +7,9 @@
 --!
 --! \todo Students that submit this code have to complete their details:
 --!
---! Student 1 name         : 
---! Student 1 studentnumber: 
---! Student 1 email address: 
+--! Student 1 name         : Kevin van Hoeijen
+--! Student 1 studentnumber: 21188888
+--! Student 1 email address: k.vanhoeijen@student.han.nl
 --!
 --! Student 2 name         : 
 --! Student 2 studentnumber: 
@@ -68,9 +68,31 @@ ENTITY seg7dec IS
 
    --! When used in the refactored 7-segement drive, 
    --! place here your CONSTANTS.
-
+	GENERIC( 
+	
+   CONSTANT CHAR_0 : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "0000001"; -- 0
+   CONSTANT CHAR_1 : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "1001111"; -- 1
+   CONSTANT CHAR_2 : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "0010010"; -- 2
+   CONSTANT CHAR_3 : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "0000110"; -- 3
+   CONSTANT CHAR_4 : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "1001100"; -- 4
+   CONSTANT CHAR_5 : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "0100100"; -- 5
+   CONSTANT CHAR_6 : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "0100000"; -- 6
+   CONSTANT CHAR_7 : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "0001111"; -- 7
+   CONSTANT CHAR_8 : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "0000000"; -- 8
+   CONSTANT CHAR_9 : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "0000100"; -- 9
+   CONSTANT CHAR_A : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "0001000"; -- A
+   CONSTANT CHAR_B : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "1100000"; -- b
+   CONSTANT CHAR_C : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "0110001"; -- C
+   CONSTANT CHAR_D : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "1000010"; -- D
+   CONSTANT CHAR_E : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "0110000"; -- E
+   CONSTANT CHAR_F : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "0111000"; -- F
+	CONSTANT NONE 	 : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "1111111"  -- Default / All segments off
+	
+	);
+	
    port(
       C       : IN  STD_LOGIC_VECTOR(3 downto 0);
+		dot 	  : IN  STD_LOGIC;
       display : OUT STD_LOGIC_VECTOR(0 to 7) 
    );
 END ENTITY seg7dec;
@@ -78,7 +100,30 @@ END ENTITY seg7dec;
 ARCHITECTURE implementation OF seg7dec IS
 BEGIN
 
-	--! Add here the ARCHITECTURE of your refactored 7-segment driver
+	-- Dot control 
+	  display(7) <= NOT dot;
+
+  -- Multiplex character to 7-segment pattern based on 4-bit input
+  WITH C SELECT
+    display(0 TO 6) <=
+      CHAR_0 WHEN "0000",
+      CHAR_1 WHEN "0001",
+      CHAR_2 WHEN "0010",
+      CHAR_3 WHEN "0011",
+      CHAR_4 WHEN "0100",
+      CHAR_5 WHEN "0101",
+      CHAR_6 WHEN "0110",
+      CHAR_7 WHEN "0111",
+      CHAR_8 WHEN "1000",
+      CHAR_9 WHEN "1001",
+      CHAR_A WHEN "1010",
+      CHAR_B WHEN "1011",
+      CHAR_C WHEN "1100",
+      CHAR_D WHEN "1101",
+      CHAR_E WHEN "1110",
+      CHAR_F WHEN "1111",
+      NONE   WHEN OTHERS;
+
 
 END ARCHITECTURE implementation;
 --------------------------------------------------------------------
