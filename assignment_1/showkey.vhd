@@ -7,13 +7,13 @@
 --!
 --! \todo Students that submit this code have to complete their details:
 --!
---! Student 1 name         : 
---! Student 1 studentnumber: 
---! Student 1 email address: 
+--! Student 1 name         : arjan kerkhof 
+--! Student 1 studentnumber: 2103073
+--! Student 1 email address: jp.kerkhof@student.han.nl
 --!
---! Student 2 name         : 
---! Student 2 studentnumber: 
---! Student 2 email address: 
+--! Student 2 name         : Christiaan orth
+--! Student 2 studentnumber: 608171
+--! Student 2 email address: cmj.orth@student.han.nl 
 --!
 --! Version History:
 --! ----------------
@@ -22,7 +22,9 @@
 --! -------|-----------|--------|-----------------------------------
 --! 001    |20-3-2020  |WLGRW   |Inital version
 --! 002    |6-7-2020   |WLGRW   |Added a todo not to modify the header of the file to represent teh students that worked on the file.
---!
+--! 003    |23-4-2023  |Kevin   |Added the first version of code for showkey according to flow chart
+--! 004    |24-4-2023  |Kevin   |Bugfix > linkt only data to dig1/dig2 instead of complete frame
+--! 005    |24-4-2023  |Kevin   |Added dig1,deg0 and scancode to reset. according to flow chart
 --!
 --! # Opdracht 1: Deelopdracht showkey
 --!
@@ -67,55 +69,48 @@ ENTITY showkey IS
    );
 END showkey;
 --------------------------------------------------------------------
---------------------------------------------------------------------
 ARCHITECTURE LogicFunction OF showkey IS
 
-    -- Add declarations
-    signal bit_counter 		: integer range 0 to 10 := 0;
-    signal shift_register 	: std_logic_vector(10 downto 0) := (others => '0');
-	 signal dig0_register 	: std_logic_vector(7 downto 0) := (others => '0');
-    signal dig1_register	: std_logic_vector(7 downto 0) := (others => '0');
+      -- Add here the declarations for showkey
+
+      SIGNAL   ps2_frame        : STD_LOGIC_VECTOR(10 DOWNTO 0);   --the complete incomming ps2 data
+      SIGNAL   temp_data        : STD_LOGIC_VECTOR(10 DOWNTO 0);   --temporary storage regiser for data 
+      
+BEGIN
+   ps2IN: PROCESS (reset, kbclock, kbdata, temp_data) IS 
+   
+      VARIABLE bit_counter : INTEGER RANGE 0 TO 15 := 0;    --Counter to to count the bits recieved and to place them in to the correct slot
+      
+BEGIN
+   IF reset = '0' THEN
+      byte_read   <= '0';     --reset byte_read
+      bit_counter :=  0 ;     --reset counter
+
+   ELSIF falling_edge(kbclock) THEN   
+      IF bit_counter = 0 THEN
+         byte_read <= '0';
+         
+      END IF;
+      
+      temp_data(bit_counter) <= kbdata;   -- place the incomming bit in the temp_data
+      bit_counter := bit_counter + 1;     -- add one to the bit counter
+      
+      IF bit_counter > 10 THEN      -- check if the number of incomming bits are greater then 10
+         bit_counter :=  0;         -- bit_counter reset
+         byte_read   <= '1';        -- byte is read 
+      END IF;
+   END IF;
+   
+ps2_frame <= temp_data;
 
 
-BEGIN 
+      
+END PROCESS ps2In;
 
-    process(kbclock, reset)
-    begin
-        if reset = '0' then
-            bit_counter <= 0;
-            shift_register <= (others => '0');
-            dig0_register <= (others => '0');
-            dig1_register <= (others => '0');
-            scancode <= (others => '0');
-            byte_read <= '0';
-        
-        elsif falling_edge(kbclock) then 
+         scancode <= ps2_frame(8 DOWNTO 1);                                           -- assing the incomming data to scancode
+         dig1     <= "0000" & ps2_frame(8 DOWNTO 5) WHEN reset = '1' ELSE "00000000"; -- debug info for in the seven seg display
+         dig0     <= "0000" & ps2_frame(4 DOWNTO 1) WHEN reset = '1' ELSE "00000000"; -- debug info for in the seven seg display
 
-            if bit_counter = 0 then
-                byte_read <= '0';
-            end if;
 
-            if bit_counter <= 10 then
-                shift_register(bit_counter) <= kbdata;
-                bit_counter <= bit_counter + 1;
-            end if;
-					 
-            if bit_counter = 10 then
-                scancode <= shift_register(8 downto 1);						-- Set bitstring into shift register
-
-                dig1_register <= dig0_register;
-                dig0_register(3 downto 0) <= shift_register(4 downto 1); -- Low nibble
-                dig0_register(7 downto 4) <= shift_register(8 downto 5); -- High nibble 
-
-                byte_read 		<= '1';
-                bit_counter 	<= 0;
-            end if;
-        end if;
-    end process;
-
-    -- Drive outputs from internal registers
-    dig0 <= dig0_register;
-    dig1 <= dig1_register;
-
-END ARCHITECTURE LogicFunction;
-
+end LogicFunction;
+--------------------------------------------------------------------

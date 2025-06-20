@@ -51,9 +51,3 @@ output_files
 *example*
 *sopc_*
 PLLJ_PLLSPE_INFO.txt # The generated PLL specification file
-/hardware/eagle/HAN_DE10-Lite_PS2SpeakerShield_001.b#1
-/hardware/eagle/HAN_DE10-Lite_PS2SpeakerShield_001.s#1
-/hardware/eagle/HAN_DE10-Lite_PS2SpeakerShield_001.s#2
-/hardware/eagle/HAN_DE10-Lite_PS2SpeakerShield_001.s#3
-/hardware/eagle/HAN_DE10-Lite_PS2SpeakerShield_001.s#4
-/hardware/eagle/HAN_DE10-Lite_PS2SpeakerShield_001_EC.txt
