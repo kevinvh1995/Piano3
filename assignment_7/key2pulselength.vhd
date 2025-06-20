@@ -1,19 +1,19 @@
 --------------------------------------------------------------------
 --! \file      key2pulselength.vhd
 --! \date      see top of 'Version History'
---! \brief     The masters orgeltje 
+--! \brief     The masters orgeltje
 --! \author    Remko Welling (WLGRW) remko.welling@han.nl
---! \copyright HAN TF ELT/ESE Arnhem 
+--! \copyright HAN TF ELT/ESE Arnhem
 --!
 --! \todo Students that submit this code have to complete their details:
 --!
---! Student 1 name         : arjan kerkhof 
---! Student 1 studentnumber: 2103073
---! Student 1 email address: jp.kerkhof@student.han.nl
+--! Student 1 name         : Kevin van Hoeijen
+--! Student 1 studentnumber: 2118888
+--! Student 1 email address: k.vanhoeijen@student.han.nl
 --!
---! Student 2 name         : Christiaan orth
---! Student 2 studentnumber: 608171
---! Student 2 email address: cmj.orth@student.han.nl 
+--! Student 2 name         : Jaap-Jan Groenendijk
+--! Student 2 studentnumber: 1548148
+--! Student 2 email address: jj.groenendijk@student.han.nl
 --!
 --! Version History:
 --! ----------------
@@ -27,10 +27,10 @@
 --!
 --!
 --! # Assignment 4:key2pulselength
---! 
---! 
+--!
+--!
 --! \verbatim
---! 
+--!
 --!              +-------------------+
 --!              |                   |
 --! key[7..0] -->|                   |
@@ -68,7 +68,7 @@
 --!  20 | [{    | 54    | E+      | 1319      | 2370
 --!  21 | ]}    | 5B    | F+      | 1397      | 2237
 --!  22 | Back  | 41    |    Fis+ | 1480      | 2112
---!  
+--!
 --------------------------------------------------------------------
 LIBRARY ieee;
 USE     ieee.STD_LOGIC_1164.all;
@@ -77,7 +77,7 @@ USE     ieee.numeric_std.all;
 ENTITY key2pulselength is
 
    --! Use CONSTANTS here
-   GENERIC( 
+   GENERIC(
       key_TAB :            STD_LOGIC_VECTOR (7 DOWNTO 0) := X"0D";
       key_1 :              STD_LOGIC_VECTOR (7 DOWNTO 0) := X"16";
       key_Q :              STD_LOGIC_VECTOR (7 DOWNTO 0) := X"15";
@@ -100,9 +100,9 @@ ENTITY key2pulselength is
       key_brack_open :     STD_LOGIC_VECTOR (7 DOWNTO 0) := X"54";
       key_brack_closed :   STD_LOGIC_VECTOR (7 DOWNTO 0) := X"5B";
       key_BACK :           STD_LOGIC_VECTOR (7 DOWNTO 0) := X"41"
-      
+
    );
-   
+
    PORT(
       reset      : IN  STD_LOGIC;                    -- Reset active is '0'
       key        : IN  STD_LOGIC_VECTOR(7 DOWNTO 0);
@@ -115,86 +115,86 @@ ARCHITECTURE implementation1 OF key2pulselength IS
 BEGIN
 
    divisor_selecor : PROCESS (key, reset)
-   
+
    BEGIN
       IF reset = '0' THEN
          pulslength <= 0;
       ELSE
-         
+
          CASE key IS                -- select frequencie of sound depended on key input
             WHEN key_TAB =>
                pulslength <= 7102;  -- set the pulslength
-               
+
             WHEN key_1 =>
                pulslength <= 6704;  -- set the pulslength
-               
+
             WHEN key_Q =>
                pulslength <= 6327;  -- set the pulslength
-               
+
             WHEN key_W =>
                pulslength <= 5972;  -- set the pulslength
-               
+
             WHEN key_3 =>
                pulslength <= 5637;  -- set the pulslength
-               
+
             WHEN key_E =>
                pulslength <= 5321;  -- set the pulslength
-               
+
             WHEN key_4 =>
                pulslength <= 5022;  -- set the pulslength
-               
+
             WHEN key_R =>
                pulslength <= 4740;  -- set the pulslength
-               
+
             WHEN key_T =>
                pulslength <= 4474;  -- set the pulslength
-               
+
             WHEN key_6 =>
                pulslength <= 4223;  -- set the pulslength
-               
+
             WHEN key_Y =>
                pulslength <= 3986;  -- set the pulslength
-               
+
             WHEN key_7 =>
                pulslength <= 3762;  -- set the pulslength
-               
+
             WHEN key_U =>
                pulslength <= 3551;  -- set the pulslength
-               
+
             WHEN key_8 =>
                pulslength <= 3352;  -- set the pulslength
-               
+
             WHEN key_I =>
                pulslength <= 3164;  -- set the pulslength
-               
+
             WHEN key_O =>
                pulslength <= 2986;  -- set the pulslength
-               
+
             WHEN key_0 =>
                pulslength <= 2819;  -- set the pulslength
-               
+
             WHEN key_P =>
                pulslength <= 2660;  -- set the pulslength
-               
+
             WHEN key_lines =>
                pulslength <= 2511;  -- set the pulslength
-               
+
             WHEN key_brack_open =>
                pulslength <= 2370;  -- set the pulslength
-               
+
             WHEN key_brack_closed =>
                pulslength <= 2237;  -- set the pulslength
-               
+
             WHEN key_BACK =>
                pulslength <= 2112;  -- set the pulslength
-               
+
             WHEN OTHERS =>
                pulslength <= 0;     -- when no key is pressed set pulslength to 0
          END CASE;
-      
+
       END IF;
    END PROCESS ;
 
-   
+
 END implementation1;
 --------------------------------------------------------------------
