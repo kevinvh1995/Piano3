@@ -23,9 +23,6 @@
 -- 
 -- Simulation tool : ModelSim-Altera (VHDL)
 -- 
--- ##################################################################################################
--- # This code is for inspiration only and requers to be modified to meet the objectives set for it. #
--- ##################################################################################################
 
 LIBRARY ieee;                                               
 USE ieee.std_logic_1164.all;
