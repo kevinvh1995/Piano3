@@ -2,28 +2,28 @@
 --! \file      key2pulselength.vhd
 --! \date      see top of 'Version History'
 --! \brief     The masters orgeltje
---! \author    Remko Welling (WLGRW) remko.welling@han.nl
+--! \author    [Redacted]
 --! \copyright HAN TF ELT/ESE Arnhem
 --!
 --! \todo Students that submit this code have to complete their details:
 --!
---! Student 1 name         : Kevin van Hoeijen
---! Student 1 studentnumber: 2118888
---! Student 1 email address: k.vanhoeijen@student.han.nl
+--! Student 1 name         : [Redacted]
+--! Student 1 studentnumber: [Redacted]
+--! Student 1 email address: [Redacted]
 --!
---! Student 2 name         : Jaap-Jan Groenendijk
---! Student 2 studentnumber: 1548148
---! Student 2 email address: jj.groenendijk@student.han.nl
+--! Student 2 name         : [Redacted]
+--! Student 2 studentnumber: [Redacted]
+--! Student 2 email address: [Redacted]
 --!
 --! Version History:
 --! ----------------
 --!
 --! Nr:    |Date:      |Author: |Remarks:
 --! -------|-----------|--------|-----------------------------------
---! 001    |26-3-2015  |WLGRW   |Inital version
---! 002    |13-2-2020  |WLGRW   |Update to MAX10 on DE10-Lite board
---! 003    |7-4-2020   |WLGRW   |Transformation to assignment
---! 004    |6-7-2020   |WLGRW   |Added a todo not to modify the header of the file to represent teh students that worked on the file.
+--! 001    |26-3-2015  |[Redacted]   |Inital version
+--! 002    |13-2-2020  |[Redacted]   |Update to MAX10 on DE10-Lite board
+--! 003    |7-4-2020   |[Redacted]   |Transformation to assignment
+--! 004    |6-7-2020   |[Redacted]   |Added a todo not to modify the header of the file to represent teh students that worked on the file.
 --!
 --!
 --! # Assignment 4:key2pulselength

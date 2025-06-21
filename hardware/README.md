@@ -12,7 +12,7 @@ The PS/2 keyboard interface shield for DE10-Lite is provided in the hope that it
 ## License
 The PS/2 keyboard interface shield for DE10-Lite is part of the SOC classes for HAN Engineering Hoofdmodule Embedded Hardware Engineering.
 
-The design of the PS/2 keyboard interface shield for DE10-Lite is free: You may redistribute it and/or modify it under the terms of a Creative  Commons Attribution-NonCommercial 4.0 International License (http://creativecommons.org/licenses/by-nc/4.0/) by Remko Welling (http://han-ese.nl/~rwelling) E-mail: remko.welling@han.nl 
+The design of the PS/2 keyboard interface shield for DE10-Lite is free: You may redistribute it and/or modify it under the terms of a Creative  Commons Attribution-NonCommercial 4.0 International License (http://creativecommons.org/licenses/by-nc/4.0/).
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
 
@@ -108,8 +108,6 @@ To test the PS/2 keyboard interface shield use the Quartus project that is provi
 
 # Conclusion
 Soldering is fun! I hope you enjoy your self-made PS/2 keyboard interface shield and the joy of playing your VHDL piano.
-
-You make me very happy when you share your pictures or video. Cu, Remko.
 
 [![VHDL-piano with PS/2 keyboard interface shield](https://img.youtube.com/vi/MyB9OI17_hk/0.jpg)](https://www.youtube.com/watch?v=MyB9OI17_hk)
 

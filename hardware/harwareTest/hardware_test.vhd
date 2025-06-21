@@ -2,7 +2,7 @@
 --! \file      hardware_test.vhd
 --! \date      see top of 'Version History'
 --! \brief     Hardware test to verify operation of the PS/2 interface shield for DE10-Lite 
---! \author    Remko Welling (WLGRW) remko.welling@han.nl
+--! \author    [Redacted]
 --! \copyright HAN TF ELT/ESE Arnhem 
 --!
 --! Version History:
@@ -10,7 +10,7 @@
 --!
 --! Nr:    |Date:      |Author: |Remarks:
 --! -------|-----------|--------|-----------------------------------
---! 001    |15-5-2020  |WLGRW   |Inital version
+--! 001    |15-5-2020  |[Redacted]   |Inital version
 --! 002    |           |        |
 --!
 --! # Hardware test for PS/2 interface shield for DE10-Lite

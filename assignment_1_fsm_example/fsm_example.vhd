@@ -2,7 +2,7 @@
 --! \file      fsm_example.vhd
 --! \date      see top of 'Version History'
 --! \brief     FSM example in VHD with 2 ARCHITECTUREs 
---! \author    Remko Welling (WLGRW) remko.welling@han.nl
+--! \author    [Redacted]
 --! \copyright HAN TF ELT/ESE Arnhem 
 --!
 --! Version History:
@@ -10,7 +10,7 @@
 --!
 --! Nr:    |Date:      |Author: |Remarks:
 --! -------|-----------|--------|-----------------------------------
---! 001    |1-4-2020   |WLGRW   |Initial version fro release
+--! 001    |1-4-2020   |[Redacted]   |Initial version fro release
 --!
 --------------------------------------------------------------------
 LIBRARY ieee;

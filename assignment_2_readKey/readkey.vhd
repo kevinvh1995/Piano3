@@ -1,4 +1,3 @@
-
 --  #########################################################################
 --  #########################################################################
 --  ##                                                                     ##
@@ -14,7 +13,7 @@
 --! \file      readkey.vhd
 --! \date      see top of 'Version History'
 --! \brief     Read keys from keyboard
---! \author    Remko Welling (WLGRW) remko.welling@han.nl
+--! \author    [Redacted]
 --! \copyright HAN TF ELT/ESE Arnhem 
 --!
 --! Version History:
@@ -22,9 +21,9 @@
 --!
 --! Nr:    |Date:      |Author: |Remarks:
 --! -------|-----------|--------|-----------------------------------
---! 001    |22-3-2020  |WLGRW   | Removed ARCHITECTURE and added documentation Added to Git repository.
---! 002    |20-5-2020  |WLGRW   | Corrected coponent ENTITY missing
---! 003    |6-7-2020   |WLGRW   | Added a todo not to modify the header of the file to represent teh students that worked on the file.
+--! 001    |22-3-2020  |[Redacted]   | Removed ARCHITECTURE and added documentation Added to Git repository.
+--! 002    |20-5-2020  |[Redacted]   | Corrected coponent ENTITY missing
+--! 003    |6-7-2020   |[Redacted]   | Added a todo not to modify the header of the file to represent teh students that worked on the file.
 --! 
 --! readkey combines the following components:
 --!  - clock_domain_crossing
