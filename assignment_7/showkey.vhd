@@ -22,9 +22,9 @@
 --! -------|-----------|--------|-----------------------------------
 --! 001    |20-3-2020  |WLGRW   |Inital version
 --! 002    |6-7-2020   |WLGRW   |Added a todo not to modify the header of the file to represent teh students that worked on the file.
---! 003    |23-4-2023  |Kevin   |Added the first version of code for showkey according to flow chart
---! 004    |24-4-2023  |Kevin   |Bugfix > linkt only data to dig1/dig2 instead of complete frame
---! 005    |24-4-2023  |Kevin   |Added dig1,deg0 and scancode to reset. according to flow chart
+--!
+--!
+--!
 --!
 --! # Opdracht 1: Deelopdracht showkey
 --!

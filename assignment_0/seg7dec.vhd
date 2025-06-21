@@ -68,44 +68,28 @@ ENTITY seg7dec IS
 
 
     GENERIC (
-      -- constants for controlling the leds on 7 segment display
-      hex_0       : STD_LOGIC_VECTOR(0 TO 6) := "0000001";
-      hex_1       : STD_LOGIC_VECTOR(0 TO 6) := "1001111";
-      hex_2       : STD_LOGIC_VECTOR(0 TO 6) := "0010010";
-      hex_3       : STD_LOGIC_VECTOR(0 TO 6) := "0000110";
-      hex_4       : STD_LOGIC_VECTOR(0 TO 6) := "1001100";
-      hex_5       : STD_LOGIC_VECTOR(0 TO 6) := "0100100";
-      hex_6       : STD_LOGIC_VECTOR(0 TO 6) := "0100000";
-      hex_7       : STD_LOGIC_VECTOR(0 TO 6) := "0001111";
-      hex_8       : STD_LOGIC_VECTOR(0 TO 6) := "0000000";
-      hex_9       : STD_LOGIC_VECTOR(0 TO 6) := "0000100";
-      hex_A       : STD_LOGIC_VECTOR(0 TO 6) := "0001000";
-      hex_B       : STD_LOGIC_VECTOR(0 TO 6) := "1100000";
-      hex_C       : STD_LOGIC_VECTOR(0 TO 6) := "1110010";
-      hex_D       : STD_LOGIC_VECTOR(0 TO 6) := "1000010";
-      hex_E       : STD_LOGIC_VECTOR(0 TO 6) := "0110000";
-      hex_F       : STD_LOGIC_VECTOR(0 TO 6) := "0111000";
-      hex_plus    : STD_LOGIC_VECTOR(0 TO 6) := "1001110";
-      hex_minus   : STD_LOGIC_VECTOR(0 TO 6) := "1111110";
-      hex_off     : STD_LOGIC_VECTOR(0 TO 6) := "1111111";
+	-- Assuming common mode, logic 0=segment on
+   -- Defining states of the led segments according to truth table (inverted)
+   CONSTANT CHAR_0 : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "0000001"; -- 0
+   CONSTANT CHAR_1 : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "1001111"; -- 1
+   CONSTANT CHAR_2 : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "0010010"; -- 2
+   CONSTANT CHAR_3 : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "0000110"; -- 3
+   CONSTANT CHAR_4 : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "1001100"; -- 4
+   CONSTANT CHAR_5 : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "0100100"; -- 5
+   CONSTANT CHAR_6 : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "0100000"; -- 6
+   CONSTANT CHAR_7 : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "0001111"; -- 7
+   CONSTANT CHAR_8 : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "0000000"; -- 8
+   CONSTANT CHAR_9 : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "0000100"; -- 9
+   CONSTANT CHAR_A : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "0001000"; -- A
+   CONSTANT CHAR_B : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "1100000"; -- b
+   CONSTANT CHAR_C : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "0110001"; -- C
+   CONSTANT CHAR_D : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "1000010"; -- D
+   CONSTANT CHAR_E : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "0110000"; -- E
+   CONSTANT CHAR_F : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "0111000"; -- F
+   CONSTANT CHAR_PLUS  : STD_LOGIC_VECTOR(6 DOWNTO 0)   := "1001110"; -- +
+   CONSTANT CHAR_MINUS : STD_LOGIC_VECTOR(6 DOWNTO 0)   := "1111110"; -- -
+   CONSTANT NONE : STD_LOGIC_VECTOR(6 DOWNTO 0) 		:= "1111111" -- Default / All segments off
 
-      -- inputs translated to understandeble discription
-      input_0     : STD_LOGIC_VECTOR(3 DOWNTO 0) := "0000";
-      input_1     : STD_LOGIC_VECTOR(3 DOWNTO 0) := "0001";
-      input_2     : STD_LOGIC_VECTOR(3 DOWNTO 0) := "0010";
-      input_3     : STD_LOGIC_VECTOR(3 DOWNTO 0) := "0011";
-      input_4     : STD_LOGIC_VECTOR(3 DOWNTO 0) := "0100";
-      input_5     : STD_LOGIC_VECTOR(3 DOWNTO 0) := "0101";
-      input_6     : STD_LOGIC_VECTOR(3 DOWNTO 0) := "0110";
-      input_7     : STD_LOGIC_VECTOR(3 DOWNTO 0) := "0111";
-      input_8     : STD_LOGIC_VECTOR(3 DOWNTO 0) := "1000";
-      input_9     : STD_LOGIC_VECTOR(3 DOWNTO 0) := "1001";
-      input_A     : STD_LOGIC_VECTOR(3 DOWNTO 0) := "1010";
-      input_B     : STD_LOGIC_VECTOR(3 DOWNTO 0) := "1011";
-      input_C     : STD_LOGIC_VECTOR(3 DOWNTO 0) := "1100";
-      input_D     : STD_LOGIC_VECTOR(3 DOWNTO 0) := "1101";
-      input_E     : STD_LOGIC_VECTOR(3 DOWNTO 0) := "1110";
-      input_F     : STD_LOGIC_VECTOR(3 DOWNTO 0) := "1111"
 );
 
    port(
@@ -124,26 +108,26 @@ BEGIN
 
    --! Add here the ARCHITECTURE of your refactored 7-segment driver
 
-    display(7) <= '1';  -- set dot always off
+    display(7) <= '1';  -- Always off
 
-      WITH input SELECT
-      display(0 TO 6) <=   hex_0   WHEN input_0, -- 0
-                           hex_1   WHEN input_1, -- 1
-                           hex_2   WHEN input_2, -- 2
-                           hex_3   WHEN input_3, -- 3
-                           hex_4   WHEN input_4, -- 4
-                           hex_5   WHEN input_5, -- 5
-                           hex_6   WHEN input_6, -- 6
-                           hex_7   WHEN input_7, -- 7
-                           hex_8   WHEN input_8, -- 8
-                           hex_9   WHEN input_9, -- 9
-                           hex_A   WHEN input_A, -- A
-                           hex_B   WHEN input_B, -- B
-                           hex_C   WHEN input_C, -- C
-                           hex_D   WHEN input_D, -- D
-                           hex_E   WHEN input_E, -- E
-                           hex_F   WHEN input_F, -- F
-                           hex_off WHEN OTHERS;
+        WITH input SELECT
+	  display <= CHAR_0 WHEN "0000",
+	             CHAR_1 WHEN "0001",
+		     CHAR_2 WHEN "0010",
+		     CHAR_3 WHEN "0011",
+		     CHAR_4 WHEN "0100",
+	  	     CHAR_5 WHEN "0101",
+		     CHAR_6 WHEN "0110",
+		     CHAR_7 WHEN "0111",
+		     CHAR_8 WHEN "1000",
+		     CHAR_9 WHEN "1001",
+		     CHAR_A WHEN "1010",
+		     CHAR_B WHEN "1011",
+		     CHAR_C WHEN "1100",
+		     CHAR_D WHEN "1101",
+		     CHAR_E WHEN "1110",
+		     CHAR_F WHEN "1111",
+		     NONE   WHEN OTHERS;
 
 
 
